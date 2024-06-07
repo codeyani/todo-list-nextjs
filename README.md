@@ -73,10 +73,10 @@ Your application should now be running on http://localhost:3000.
 Below is a screenshot of the application for reference:
 
 ![Todo Page](images/todo.png)
-![Edit Task](images/edit.png)
-![Add Task](images/home.png)
-![delete Task](images/delete.png)
-![Done Task](images/done_task.png)
+![Edit Page](images/edit.png)
+![Add Page](images/home.png)
+![Delete Page](images/delete.png)
+![Done Page](images/done_task.png)
 
 ## Contributing
 Feel free to submit issues or pull requests if you have any suggestions or improvements.
