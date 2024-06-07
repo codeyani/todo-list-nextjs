@@ -41,7 +41,6 @@ const Task = ({ task, handleEditTask, handleDeleteTask }) => {
     });
 
     handleDeleteTask(id)
-
     setOpenModalDeleted(false);
   };
 

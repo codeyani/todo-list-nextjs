@@ -5,7 +5,7 @@ export const POST = async (req, res) => {
     const {text} = payload;
 
     if (!text) {
-      return res.status(400).json({ error: "task is required" });
+      return new Response(JSON.stringify({ error: 'Text is required' }), { status: 422 });
     }
 
     const todo = await prisma.todo.create({
@@ -25,7 +25,7 @@ export const PUT = async (req, res) => {
   const {id, text} = payload;
 
     if (!id || !text) {
-      return res.status(400).json({ error: "ID and text are required" });
+      return new Response(JSON.stringify({ error: 'id and text are required' }), { status: 422 });
     }
 
     const todo = await prisma.todo.update({
@@ -41,7 +41,7 @@ export const DELETE = async (req, res) => {
   const {id} = payload;
 
   if (!id) {
-    return res.status(400).json({ error: "ID is required" });
+    return new Response(JSON.stringify({ error: 'id is required' }), { status: 422 });
   }
 
   await prisma.todo.delete({
