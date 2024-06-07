@@ -74,7 +74,7 @@ Below is a screenshot of the application for reference:
 
 ![Todo Page](images/todo.png)
 ![Edit Page](images/edit.png)
-![Add Page](images/home.png)
+![Add Page](images/add.png)
 ![Delete Page](images/delete.png)
 ![Done Page](images/done_task.png)
 
