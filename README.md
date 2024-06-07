@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Codeyani - ToDo List - NextJS
 
-## Getting Started
+Welcome to the TodoList App! This guide will help you set up and run the project locally.
 
-First, run the development server:
+## Prerequisites
+
+- Node.js installed on your machine
+- A Vercel Postgres database
+
+## Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone git@github.com:codeyani/todo-list-nextjs.git
+cd todo-list-nextjs
+```
+
+### 2.  Install Dependencies
+
+Run the following command to install all the required dependencies:
+
+```bash
+npm install
+
+```
+
+### 3. Create a .env File
+
+Create a .env file in the root directory of your project and add the following environment variables:
+
+```bash
+POSTGRES_URL=
+POSTGRES_PRISMA_URL=
+POSTGRES_URL_NO_SSL=
+POSTGRES_URL_NON_POOLING=
+POSTGRES_USER=
+POSTGRES_HOST=
+POSTGRES_PASSWORD=
+POSTGRES_DATABASE=
+```
+
+-  This is the connection string for your Vercel Postgres database. You can get this from your Vercel dashboard.
+
+### 4. Migrate the Database
+
+Run the following command to migrate your database:
+
+```bash
+npx prisma db push
+```
+
+
+### 5. View the Database in Prisma Studio
+
+To view and interact with your database using Prisma Studio, run:
+
+```bash
+npx prisma studio
+
+```
+
+### 6. Run the Development Server
+After setting up the environment variables, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Your application should now be running on http://localhost:3000.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Screenshot
+Below is a screenshot of the application for reference:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![Todo Page](images/todo.png)
+![Edit Task](images/edit.png)
+![Add Task](images/home.png)
+![delete Task](images/delete.png)
+![Done Task](images/done_task.png)
 
-## Learn More
+## Contributing
+Feel free to submit issues or pull requests if you have any suggestions or improvements.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
