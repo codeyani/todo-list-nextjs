@@ -3,7 +3,7 @@
 import { AiOutlinePlus } from "react-icons/ai";
 
 import { useState } from "react";
-import Modal from "./Modal";
+import Modal from "../../components/Modal";
 
 const AddTask = ({handleNewTask}) => {
   const [modalOpen, setModalOpen] = useState(false);

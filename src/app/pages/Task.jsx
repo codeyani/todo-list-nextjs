@@ -3,7 +3,7 @@
 import { FiEdit } from "react-icons/fi";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { FormEventHandler, useState } from "react";
-import Modal from "./Modal";
+import Modal from "../../components/Modal";
 import { useRouter } from "next/navigation";
 
 const Task = ({ task, handleEditTask, handleDeleteTask }) => {
